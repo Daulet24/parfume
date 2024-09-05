@@ -3,6 +3,7 @@ import { NavLink } from "../../shared/NavLink";
 import styles from "./styles.module.scss";
 import Logo from "../../assets/logo.png";
 import Cash from "../../assets/cash.png";
+import { Button } from "../../shared/Buttons"; //я добавил кнопку
 
 export const Header = () => {
   return (
@@ -20,6 +21,7 @@ export const Header = () => {
         <NavLink href="a" text="Товары" className={styles.NavLinks} />
         <NavLink href="a" text="Контакты" className={styles.NavLinks} />
         <Button text="Become a member" className={styles.button} />
+        {/* использрвал кнопку, хотя не импротировал */}
         <img src={Cash} alt="" />
       </header>
     </>
