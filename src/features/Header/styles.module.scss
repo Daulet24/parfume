@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  margin-top: 30px;
+  color: green;
+}
+
+.header_mob {
+  display: none;
+}
+
+.logo {
+  padding: 0;
+}
+
+.NavLinks {
+  padding-top: 20px;
+  color: red;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 2px solid #61ecbc;
+  }
+}
