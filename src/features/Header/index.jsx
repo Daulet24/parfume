@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <>
       <header className={styles.header}>
-        <img src={Logo} alt="//" />
+        <img className={styles.logo} src={Logo} alt="//" />
         <NavLink href="a" text="Главная" className={styles.NavLinks} />
         <NavLink
           href="a"
@@ -19,7 +19,7 @@ export const Header = () => {
         <NavLink href="a" text="Категории" className={styles.NavLinks} />
         <NavLink href="a" text="Товары" className={styles.NavLinks} />
         <NavLink href="a" text="Контакты" className={styles.NavLinks} />
-        <img src={Cash} alt="" />
+        <img className={styles.cash} src={Cash} alt="" />
       </header>
     </>
   );

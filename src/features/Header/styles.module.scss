@@ -2,25 +2,23 @@
   display: flex;
   text-align: center;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 0 40px;
   margin-top: 30px;
-  background-color: #271430;
-}
-
-.header_mob {
-  display: none;
 }
 
 .logo {
-  width: 90px;
+  width: auto !important;
+  padding-right: 20px;
+}
+
+.cash {
+  width: 5%;
+  padding: 20px;
 }
 
 .NavLinks {
   padding-top: 20px;
   color: #ffffff;
   text-decoration: none;
-
-  &:hover {
-    border-bottom: 2px solid #61ecbc;
-  }
+  padding-top: 40px;
 }
