@@ -1,8 +1,8 @@
-import React from "react";
 import { Header } from "./features/Header/index";
-import "../src/shared/styles/global.scss";
+import "./shared/Styles/global.scss";
 import { MainScreen } from "./features/MainScreen/index";
-import { CatalogScreen } from "./features/CatalogScreen/index";
+import CatalogScreen from "./features/CatalogScreen/index";
+import { AboutScreen } from "./features/AboutSreen";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Header />
       <MainScreen />
       <CatalogScreen />
+      <AboutScreen />
     </>
   );
 }

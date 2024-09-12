@@ -1,0 +1,31 @@
+.catalog_screen {
+  margin: 10px 30px;
+  gap: 20px;
+}
+
+.catalog_text h1 {
+  background: linear-gradient(90deg, #c9ab79 0%, #fce5c2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 40px;
+}
+
+.catalog_text p {
+  color: #e5e0d4;
+  font-size: 15px;
+}
+
+.catalog_components {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.catalog_btn {
+  margin-top: 120px;
+  width: 190px;
+  height: 45px;
+  border: 1px solid var(--gold_light, #e5e0d4);
+  color: #e5e0d4;
+}

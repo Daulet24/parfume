@@ -1,35 +1,62 @@
-import React, { useState } from "react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { Card } from "../../entities/Card";
+import Parfume from "../../assets/parfume.png";
 
-const Slider = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
+export default () => {
   return (
-    <div className="slider">
-      <button className="slider-button" onClick={handlePrevious}>
-        ←
-      </button>
-      <img
-        src={images[currentIndex]}
-        alt={`Slide ${currentIndex + 1}`}
-        className="slider-image"
-      />
-      <button className="slider-button" onClick={handleNext}>
-        →
-      </button>
-    </div>
+    <Swiper
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={3}
+      navigation
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log("slide change")}
+    >
+      <SwiperSlide>
+        <Card
+          img={Parfume}
+          name="Ароматическая свеча"
+          title="“Медовое утро”"
+          price="2000"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Card
+          img={Parfume}
+          name="Ароматическая свеча"
+          title="“Медовое утро”"
+          price="2000"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Card
+          img={Parfume}
+          name="Ароматическая свеча"
+          title="“Медовое утро”"
+          price="2000"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Card
+          img={Parfume}
+          name="Ароматическая свеча"
+          title="“Медовое утро”"
+          price="2000"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Card
+          img={Parfume}
+          name="Ароматическая свеча"
+          title="“Медовое утро”"
+          price="2000"
+        />
+      </SwiperSlide>
+    </Swiper>
   );
 };
-
-export default Slider;
