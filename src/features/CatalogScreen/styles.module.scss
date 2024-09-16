@@ -29,3 +29,12 @@
   border: 1px solid var(--gold_light, #e5e0d4);
   color: #e5e0d4;
 }
+
+@media only screen and (max-width: 600px) {
+  .catalog_text {
+    text-align: center;
+  }
+  .catalog_btn {
+    display: none;
+  }
+}

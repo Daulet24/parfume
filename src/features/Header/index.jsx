@@ -3,6 +3,7 @@ import { NavLink } from "../../shared/NavLink";
 import styles from "./styles.module.scss";
 import Logo from "../../assets/logo.png";
 import Cash from "../../assets/cash.png";
+import BurgerMenu from "../BurgerMenu";
 
 export const Header = () => {
   return (
@@ -20,6 +21,10 @@ export const Header = () => {
         <NavLink href="a" text="Товары" className={styles.NavLinks} />
         <NavLink href="a" text="Контакты" className={styles.NavLinks} />
         <img className={styles.cash} src={Cash} alt="" />
+      </header>
+      <header className={styles.header_mob}>
+        <img src={Logo} alt="image" width="190px" />
+        <BurgerMenu />
       </header>
     </>
   );
