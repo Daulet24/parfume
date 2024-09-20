@@ -1,11 +1,11 @@
-import Slider from "../../shared/Slider";
+import { Slider } from "../../shared/Slider";
 import logo from "../../assets/logo.png";
 import parfume2 from "../../assets/parfume_2.png";
 import parfume from "../../assets/parfume.png";
 import styles from "./styles.module.scss";
 import { Button } from "../../shared/Buttons";
 
-const CatalogScreen = () => {
+export const CatalogScreen = () => {
   const images = [logo, parfume2, parfume];
 
   return (
@@ -21,9 +21,7 @@ const CatalogScreen = () => {
         </div>
         <Button className={styles.catalog_btn} text="Весь каталог" />
       </div>
-      <Slider img={images} />
+      {<Slider img={images} />}
     </div>
   );
 };
-
-export default CatalogScreen;

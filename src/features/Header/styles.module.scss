@@ -2,13 +2,13 @@
   display: flex;
   text-align: center;
   justify-content: space-between;
-  padding: 0 40px;
-  margin-top: 30px;
+  padding: 0 clamp(20px, 2.0832vw, 80px);
+  margin-top: clamp(15px, 1.5624vw, 60px);
 }
 
 .cash {
   width: 5%;
-  padding: 20px;
+  padding: clamp(10px, 1.0416vw, 40px);
 }
 
 .header_mob {
@@ -16,10 +16,10 @@
 }
 
 .NavLinks {
-  padding-top: 20px;
+  padding-top: clamp(10px, 1.0416vw, 40px);
   color: #ffffff;
   text-decoration: none;
-  padding-top: 40px;
+  padding-top: clamp(20px, 2.0832vw, 80px);
 }
 
 @media only screen and (max-width: 600px) {
@@ -28,10 +28,9 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
   }
 
-  .header_mob .logo {
+  .header_mob img {
     display: none;
   }
 

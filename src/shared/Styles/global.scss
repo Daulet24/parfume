@@ -5,11 +5,30 @@
   background-color: #271430;
 }
 
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 86.6%;
+    margin: 0 auto;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
 body,
 button {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 h1,

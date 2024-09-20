@@ -7,7 +7,7 @@ import "swiper/css/scrollbar";
 import { Card } from "../../entities/Card";
 import Parfume from "../../assets/parfume.png";
 
-export default () => {
+export const Slider = () => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}

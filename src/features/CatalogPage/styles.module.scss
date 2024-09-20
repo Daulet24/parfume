@@ -1,0 +1,29 @@
+.container_btn {
+  display: flex;
+  padding: 20px 5px;
+  gap: 10px;
+}
+
+.catalog_btn {
+  width: 300px;
+  height: 40px;
+  color: #c9ab79;
+  border: 1px solid #c9ab79;
+  cursor: auto;
+}
+
+.slider_container {
+  padding: 20px;
+}
+
+.navlinks_container {
+  display: flex;
+  margin: 40px 10px;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.links {
+  color: #c9ab79;
+  text-decoration: none;
+}

@@ -1,8 +1,8 @@
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  margin-top: 40px;
+  padding: clamp(10px, 1.0416vw, 40px);
+  margin-top: clamp(20px, 2.0832vw, 80px);
   min-width: 100%;
 }
 
@@ -10,43 +10,44 @@
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-right: 20px;
+  margin-right: clamp(10px, 1.0416vw, 40px);
 }
 
 .form h2 {
   color: #c9ab79;
-  font-size: 60px;
+  font-size: clamp(30px, 3.1248vw, 120px);
 }
 
 .form p {
   color: #fff;
-  font-size: 16px;
+  font-size: clamp(8px, 0.83328vw, 32px);
 }
 
 .contact_Info {
-  margin-top: 20px;
+  margin-top: clamp(10px, 1.0416vw, 40px);
 }
 
 .contact_Info p {
   color: #c9ab79;
-  font-size: 20px;
+  font-size: clamp(10px, 1.0416vw, 40px);
 }
 
 .form_img {
-  overflow-y: hidden;
   width: 50%;
-  margin-right: 20px;
 }
 
 .form_btn {
   color: #c9ab79;
   border: 1px solid #c9ab79;
-  width: 200px;
-  height: 40px;
-  margin-top: 40px;
+  width: clamp(100px, 10.416vw, 400px);
+  height: clamp(20px, 2.0832vw, 80px);
+  margin-top: clamp(20px, 2.0832vw, 80px);
 }
 
 .name {
+  text-decoration: none;
+  color: #c9ab79;
+  width: clamp(150px, 15.624vw, 600px);
   border: none;
   border-bottom: 1px solid #c9ab79;
 }
@@ -56,7 +57,11 @@
 }
 
 .phone {
+  text-decoration: none;
+  color: #c9ab79;
+  width: clamp(150px, 15.624vw, 600px);
   border: none;
+  outline: none;
   border-bottom: 1px solid #c9ab79;
 }
 
